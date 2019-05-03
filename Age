@@ -1,0 +1,36 @@
+#--------------------------------------------------------#
+#!/bin/bash                                              #
+#  This script was creted to test the age of customer.   #
+#              Author: Curtis Henderson                  #
+#                 Date: May 3, 2019                      #
+#--------------------------------------------------------#
+
+# In line functions
+sl ()
+{
+sleep 3
+}
+
+#If statement
+
+#Welcome Messages
+welcheck ()
+{
+echo -e "\n Hello and welcome to our store!\n"
+sl
+echo -e "\n Before we get started, please provide your year of birth \n"
+read yr
+echo -e "\n Please wait.. \n"
+sl
+if
+    [ $yr -gt 1998 ]
+then
+    echo -e "\nSorry! We can't service you at this time.\n Please return all items to their proper location. \n"
+    sleep 6
+    echo -e "\n If you've input your information incorrectly, please wait and try again.\n"
+else
+    echo -e "\n Thank you! Please be sure to ask one of our experts about the new sale items. \n"
+fi
+welcheck
+}
+welcheck
